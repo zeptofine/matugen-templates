@@ -1,0 +1,90 @@
+/*
+* GTK 4 Colors
+* Converted from Matugen template
+*/
+
+:root {
+    /* The main accent color and the matching text value */
+    --adw-accent-rgb: {{ colors.primary.default.red }}, {{ colors.primary.default.green }}, {{ colors.primary.default.blue }};
+    --adw-accent-bg-rgb: {{ colors.primary.default.red }}, {{ colors.primary.default.green }},{{ colors.primary.default.blue }};
+    --adw-accent-fg-rgb: {{ colors.on_primary.default.red }}, {{ colors.on_primary.default.green }}, {{ colors.on_primary.default.blue }};
+
+	/* destructive-action buttons */
+	/*--adw-destructive-bg-rgb: 192, 28, 40;
+	--adw-destructive-fg-rgb: 255, 255, 255;
+	--adw-destructive-rgb: 255, 123, 99;*/
+
+	/* Levelbars, entries, labels and infobars. These don't need text colors */
+	--adw-success-bg-rgb: {{ colors.primary.default.red }}, {{ colors.primary.default.green }}, {{ colors.primary.default.blue }};
+	--adw-success-fg-rgb: {{ colors.on_primary.default.red }}, {{ colors.on_primary.default.green }}, {{ colors.on_primary.default.blue }};
+	--adw-success-rgb: {{ colors.primary.default.red }}, {{ colors.primary.default.green }}, {{ colors.primary.default.blue }};
+
+	--adw-warning-bg-rgb: {{ colors.error_container.default.red }}, {{ colors.error_container.default.green }}, {{ colors.error_container.default.blue }};
+	--adw-warning-fg-rgb: {{ colors.on_error_container.default.red }}, {{ colors.on_error_container.default.green }}, {{ colors.on_error_container.default.blue }};
+	--adw-warning-rgb: {{ colors.error_container.default.red }}, {{ colors.error_container.default.green }}, {{ colors.error_container.default.blue }};
+
+	--adw-error-bg-rgb: {{ colors.error.default.red }}, {{ colors.error.default.green }}, {{ colors.error.default.blue }};
+	--adw-error-fg-rgb: {{ colors.on_error.default.red }}, {{ colors.on_error.default.green }}, {{ colors.on_error.default.blue }};
+	--adw-error-rgb: {{ colors.error.default.red }}, {{ colors.error.default.green }}, {{ colors.error.default.blue }};
+
+	/* Window */
+	--adw-window-bg-rgb: {{ colors.surface_container.default.red }} {{ colors.surface_container.default.green }} {{ colors.surface_container.default.blue }};
+    --adw-window-fg-rgb: {{ colors.on_surface.default.red }} {{ colors.on_surface.default.green }} {{ colors.on_surface.default.blue }};
+
+	/* Views - e.g. text view or tree view */
+	/*--adw-view-bg-rgb: {{ colors.surface.default.red }} {{ colors.surface.default.green }} {{ colors.surface.default.blue }};
+    --adw-view-fg-rgb: {{ colors.on_surface.default.red }} {{ colors.on_surface.default.green }} {{ colors.on_surface.default.blue }};*/
+
+	/* Header bar, search bar, tab bar */
+	--adw-headerbar-bg-rgb: {{ colors.surface_container_lowest.default.red }}, {{ colors.surface_container_lowest.default.green }}, {{ colors.surface_container_lowest.default.blue }};
+    --adw-headerbar-fg-rgb: {{ colors.on_surface.default.red }}, {{ colors.on_surface.default.green }}, {{ colors.on_surface.default.blue }};
+	--adw-headerbar-border-rgb: {{ colors.outline.default.red }}, {{ colors.outline.default.green }}, {{ colors.outline.default.blue }};
+	--adw-headerbar-backdrop-rgb: var(--adw-window-bg-rgb);
+	--adw-headerbar-shade-rgb: 255, 255, 255;
+	--adw-headerbar-shade-a: 1.0;
+	--adw-headerbar-darker-shade-rgb: 0, 0, 12;
+	--adw-headerbar-darker-shade-a: 0.9;
+
+	/* Split pane views */
+	--adw-sidebar-bg-rgb: {{ colors.surface_container_low.default.red }}, {{ colors.surface_container_low.default.green }}, {{ colors.surface_container_low.default.blue }};
+    --adw-sidebar-fg-rgb: {{ colors.on_surface_variant.default.red }}, {{ colors.on_surface_variant.default.green }}, {{ colors.on_surface_variant.default.blue }};
+    /*--adw-sidebar-border-rgb: {{ colors.outline.default.red }} {{ colors.outline.default.green }} {{ colors.outline.default.blue }};
+    --adw-sidebar-backdrop-rgb: 0 0 0;
+	--adw-sidebar-shade-rgb: 255, 255, 255;
+	--adw-sidebar-shade-a: 0.25;*/
+/*
+	--adw-secondary-sidebar-bg-rgb: 255, 255, 255;
+	--adw-secondary-sidebar-fg-rgb: 0, 0, 0;
+	--adw-secondary-sidebar-backdrop-rgb: 37, 37, 41;
+	--adw-secondary-sidebar-shade-rgb: 0, 0, 6;
+	--adw-secondary-sidebar-shade-a: 0.25;*/
+
+	/* Cards, boxed lists */
+	--adw-card-bg-rgb: {{ colors.surface_tint.default.red }}, {{ colors.surface_tint.default.green }}, {{ colors.surface_tint.default.blue }};
+	--adw-card-fg-rgb: {{ colors.on_primary_container.default.red }}, {{ colors.on_primary_container.default.green }}, {{ colors.on_primary_container.default.blue }};
+
+	/* Dialogs */
+	--adw-dialog-bg-rgb: 0, 0, 0;
+	--adw-dialog-fg-rgb: 255, 255, 255;
+
+	/* Popovers */
+	--adw-popover-bg-rgb: {{ colors.surface_container_high.default.red }}, {{ colors.surface_container_high.default.green }}, {{ colors.surface_container_high.default.blue }};
+    --adw-popover-fg-rgb: {{ colors.on_surface.default.red }}, {{ colors.on_surface.default.green }}, {{ colors.on_surface.default.blue }};
+
+	/* Banners */
+	--adw-banner-bg-rgb: {{ colors.primary.default.red }}, {{ colors.primary.default.green }}, {{ colors.primary.default.blue }};
+	--adw-banner-fg-rgb: {{ colors.on_primary.default.red }}, {{ colors.on_primary.default.green }}, {{ colors.on_primary.default.blue }};
+
+	/* Thumbnails */
+	/*--adw-thumbnail-bg-rgb: 57, 57, 61;
+	--adw-thumbnail-fg-rgb: 255, 255, 255;*/
+
+	/* Miscellaneous */
+	/*--adw-shade-rgb: 0, 0, 6;
+	--adw-shade-a: 0.25;*/
+
+	/* Skin-specific */
+	--adw-user-offline-rgb: {{ colors.secondary_container.default.red }}, {{ colors.secondary_container.default.green }}, {{ colors.secondary_container.default.blue }};
+	--adw-user-online-rgb: {{ colors.primary.default.red }}, {{ colors.primary.default.green }}, {{ colors.primary.default.blue }};
+	--adw-user-ingame-rgb: {{ colors.tertiary.default.red }}, {{ colors.tertiary.default.green }}, {{ colors.tertiary.default.blue }};
+}

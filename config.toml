@@ -1,0 +1,62 @@
+[config]
+version_check = false
+fallback_color = "#ffbf9b"
+caching = true
+
+# Changing the syntax
+# Expr is for keywords like {{ <keyword> }}
+expr_prefix = "{{"
+expr_postfix = "}}"
+
+# Block is for stuff like for loops etc.
+block_prefix = "<*"
+block_postfix = "*>"
+
+[config.wallpaper]
+set = false
+
+[templates.terminal-sequences]
+input_path = 'templates/sequences'
+output_path = "~/.cache/color-sequences"
+post_hook = "cat ~/.cache/color-sequences > /dev/pts/[0-9]*"
+
+[templates.zed]
+input_path = 'templates/zed-colors.json'
+output_path = '~/.config/zed/themes/matugen.json'
+
+[templates.niri]
+input_path = 'templates/niri-colors.kdl'
+output_path = '~/.config/niri/colors.kdl'
+post_hook = 'niri msg action load-config-file'
+
+[templates.vicinae]
+input_path = 'templates/vicinae.toml'
+output_path = "~/.local/share/vicinae/themes/matugen.toml"
+post_hook = "systemctl restart --user vicinae.service"
+
+[templates.waybar]
+input_path = 'templates/waybar.css'
+output_path = "~/.config/waybar/colors.css"
+
+[templates.btop]
+input_path = 'templates/btop.theme'
+output_path = '~/.config/btop/themes/matugen.theme'
+
+[templates.dunst]
+input_path = 'templates/dunst-colors.conf'
+output_path = '~/.config/dunst/dunstrc.d/colors.conf'
+post_hook = "pkill dunst; dunst & disown"
+
+[templates.gtk3]
+input_path = 'templates/gtk-colors.css'
+output_path = '~/.config/gtk-3.0/colors.css'
+post_hook = 'gsettings set org.gnome.desktop.interface gtk-theme ""; gsettings set org.gnome.desktop.interface gtk-theme adw-gtk3-{{mode}}'
+
+[templates.gtk4]
+input_path = 'templates/gtk-colors.css'
+output_path = '~/.config/gtk-4.0/colors.css'
+
+[templates.steam]
+input_path = 'templates/steam.css'
+output_path = '~/.config/AdwSteamGtk/custom.css'
+post_hook =  'adwaita-steam-gtk -i'

@@ -1,0 +1,49 @@
+/*
+* GTK Colors
+* Generated with Matugen
+*/
+
+@define-color bg_color {{colors.primary_container.default.hex}};
+@define-color fg_color {{colors.on_primary_container.default.hex}};
+@define-color base_color {{colors.primary_container.default.hex}};
+@define-color text_color {{colors.on_primary_container.default.hex}};
+@define-color selected_bg_color #f07746;
+@define-color selected_fg_color #ffffff;
+@define-color tooltip_bg_color #000000;
+@define-color tooltip_fg_color #ffffff;
+@define-color accent_color {{colors.primary_fixed_dim.default.hex}};
+@define-color accent_fg_color {{colors.on_primary_fixed.default.hex}};
+@define-color accent_bg_color {{colors.primary_fixed_dim.default.hex}};
+@define-color window_bg_color {{colors.surface_dim.default.hex}};
+@define-color window_fg_color {{colors.on_surface.default.hex}};
+@define-color headerbar_bg_color {{colors.surface_dim.default.hex}};
+@define-color headerbar_fg_color {{colors.on_surface.default.hex}};
+@define-color popover_bg_color {{colors.surface_dim.default.hex}};
+@define-color popover_fg_color {{colors.on_surface.default.hex}};
+@define-color view_bg_color {{colors.surface.default.hex}};
+@define-color view_fg_color {{colors.on_surface.default.hex}};
+@define-color card_bg_color {{colors.surface.default.hex}};
+@define-color card_fg_color {{colors.on_surface.default.hex}};
+@define-color sidebar_bg_color {{colors.surface_container.default.hex}};
+@define-color sidebar_fg_color {{colors.on_surface.default.hex}};
+@define-color sidebar_border_color {{colors.outline.default.hex}};
+@define-color sidebar_backdrop_color {{colors.surface_container_low.default.hex}};
+
+/* misc colors used by gtk+
+ *
+ * Gtk doesn't currently expand color variables for style properties. Thus,
+ * gtk-widgets.css uses literal color names, but includes a comment containing
+ * the name of the variable. Please remember to change values there as well
+ * when changing one of the variables below.
+ */
+@define-color info_fg_color {{colors.on_tertiary_container.default.hex}};
+@define-color info_bg_color {{colors.tertiary_container.default.hex}};
+@define-color warning_fg_color {{colors.on_error_container.default.hex}};
+@define-color warning_bg_color {{colors.error_container.default.hex}};
+@define-color question_fg_color {{colors.on_secondary_container.default.hex}};
+@define-color question_bg_color {{colors.secondary_container.default.hex}};
+@define-color error_fg_color {{colors.on_error.default.hex}};
+@define-color error_bg_color {{colors.error.default.hex}};
+@define-color link_color #f07746;
+@define-color success_color {{colors.primary.default.hex}};
+@define-color error_color {{colors.error.default.hex}};
