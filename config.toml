@@ -14,6 +14,7 @@ block_postfix = "*>"
 
 [config.wallpaper]
 set = false
+command = ""
 
 [templates.terminal-sequences]
 input_path = 'templates/sequences'

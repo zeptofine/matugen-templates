@@ -12,7 +12,7 @@ layout {
     }
 
     shadow {
-        color "{{colors.shadow.default.hex}}70"
+        color "{{colors.shadow.default.hex_alpha | set_alpha: 0.5 }}"
     }
 
     tab-indicator {
@@ -22,6 +22,6 @@ layout {
     }
 
     insert-hint {
-        color "{{colors.primary.default.hex}}80"
+        color "{{colors.primary.default.hex_alpha | set_alpha: 0.75 }}"
     }
 }
